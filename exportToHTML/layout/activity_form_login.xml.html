@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>activity_form_login.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bcbec4;}
+.s1 { color: #d5b778;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+activity_form_login.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="s1">&lt;androidx.constraintlayout.widget.ConstraintLayout </span><span class="s2">xmlns:android</span><span class="s3">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s2">xmlns:app</span><span class="s3">=&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="s2">xmlns:tools</span><span class="s3">=&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="s2">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+    <span class="s2">android:layout_height</span><span class="s3">=&quot;match_parent&quot;</span>
+    <span class="s2">android:background</span><span class="s3">=&quot;@drawable/background&quot;</span>
+    <span class="s2">tools:context</span><span class="s3">=&quot;.FormLogin&quot;</span><span class="s1">&gt;</span>
+
+    <span class="s1">&lt;ImageView</span>
+        <span class="s2">android:id</span><span class="s3">=&quot;@+id/livro&quot;</span>
+        <span class="s2">android:layout_width</span><span class="s3">=&quot;200dp&quot;</span>
+        <span class="s2">android:layout_height</span><span class="s3">=&quot;200dp&quot;</span>
+        <span class="s2">android:src</span><span class="s3">=&quot;@drawable/livro&quot;</span>
+        <span class="s2">app:layout_constraintStart_toStartOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s2">app:layout_constraintEnd_toEndOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s2">app:layout_constraintTop_toTopOf</span><span class="s3">=&quot;parent&quot;</span><span class="s1">/&gt;</span>
+
+     <span class="s1">&lt;View</span>
+        <span class="s2">android:id</span><span class="s3">=&quot;@+id/containerComponents&quot;</span>
+        <span class="s2">style</span><span class="s3">=&quot;@style/containerComponents&quot;</span>
+        <span class="s2">app:layout_constraintStart_toStartOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s2">app:layout_constraintEnd_toEndOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s2">app:layout_constraintTop_toBottomOf</span><span class="s3">=&quot;@id/livro&quot;</span><span class="s1">/&gt;</span>
+
+    <span class="s1">&lt;EditText</span>
+        <span class="s2">android:id</span><span class="s3">=&quot;@+id/edit_email&quot;</span>
+        <span class="s2">style</span><span class="s3">=&quot;@style/Edit_Text&quot;</span>
+        <span class="s2">android:hint</span><span class="s3">=&quot;Email&quot;</span>
+        <span class="s2">android:drawableRight</span><span class="s3">=&quot;@drawable/ic_email&quot;</span>
+        <span class="s2">app:layout_constraintStart_toStartOf</span><span class="s3">=&quot;@id/containerComponents&quot;</span>
+        <span class="s2">app:layout_constraintEnd_toEndOf</span><span class="s3">=&quot;@id/containerComponents&quot;</span>
+        <span class="s2">app:layout_constraintTop_toTopOf</span><span class="s3">=&quot;@id/containerComponents&quot;</span>
+        <span class="s1">/&gt;</span>
+
+    <span class="s1">&lt;EditText</span>
+        <span class="s2">android:id</span><span class="s3">=&quot;@+id/edit_senha&quot;</span>
+        <span class="s2">style</span><span class="s3">=&quot;@style/Edit_Text&quot;</span>
+        <span class="s2">android:hint</span><span class="s3">=&quot;Senha&quot;</span>
+        <span class="s2">android:drawableRight</span><span class="s3">=&quot;@drawable/ic_eye&quot;</span>
+        <span class="s2">app:layout_constraintStart_toStartOf</span><span class="s3">=&quot;@id/containerComponents&quot;</span>
+        <span class="s2">app:layout_constraintEnd_toEndOf</span><span class="s3">=&quot;@id/containerComponents&quot;</span>
+        <span class="s2">app:layout_constraintTop_toBottomOf</span><span class="s3">=&quot;@id/edit_email&quot;</span><span class="s1">/&gt;</span>
+        
+    <span class="s1">&lt;androidx.appcompat.widget.AppCompatButton</span>
+        <span class="s2">style</span><span class="s3">=&quot;@style/Button&quot;</span>
+        <span class="s2">android:text</span><span class="s3">=&quot;@string/entrar&quot;</span>
+        <span class="s2">app:layout_constraintStart_toStartOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s2">app:layout_constraintEnd_toEndOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s2">app:layout_constraintTop_toBottomOf</span><span class="s3">=&quot;@id/edit_senha&quot;</span>
+        
+    <span class="s1">&lt;TextView</span>
+        <span class="s2">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s2">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s2">android:text</span><span class="s3">=&quot;@string/text_titulo&quot;</span>
+        <span class="s2">android:textSize</span><span class="s3">=&quot;25dp&quot;</span>
+        <span class="s2">android:textStyle</span><span class="s3">=&quot;bold&quot;</span>
+        <span class="s2">app:layout_constraintStart_toStartOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s2">app:layout_constraintEnd_toEndOf</span><span class="s3">=&quot;parent&quot;</span><span class="s1">/&gt;</span>
+
+
+
+
+
+
+
+
+
+
+<span class="s1">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span></pre>
+</body>
+</html>
